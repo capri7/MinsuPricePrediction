@@ -78,10 +78,6 @@
    - `first_review`と`last_review`の差分
    - `bedrooms`と`accommodates`の組み合わせで価格の平均を計算
 
-**推奨画像例**：
-- 欠損値のヒートマップ
-- 特徴量エンジニアリングの効果（Before/AfterのRMSE比較グラフ）
-
 ---
 
 ## 📈 探索的データ分析 (EDA)
@@ -91,10 +87,12 @@
   - `accommodates`, `bathrooms`, `bedrooms`, `beds` との間に0.45~0.5の相関
   - その他の特徴量では非線形の関係
 
-**推奨画像例**：
-- 目的変数の分布
+**数値変数と目的変数の散布図**：
+
 - 数値変数と目的変数の散布図
-- 相関ヒートマップ
+![number_reviewとyの散布図](images/number_review.png)
+
+![review_scores_ratingとyの散布図](images/review_scores_rating.png)
 
 ---
 
@@ -116,13 +114,19 @@
 │   ├── train.csv
 │   └── test.csv
 ├── notebooks
-│   ├── data_preprocessing.ipynb
-│   ├── model_training_lightgbm.ipynb
-│   └── model_training_catboost.ipynb
+│   ├── train_preprocessing.ipynb
+│   └── test_preprocessing.ipynb   
+├── models
+│   ├── catboost.ipynb
+│   ├── lightgbm.ipynb
+│   └── ensamble.ipynb
 ├── images
-│   ├── target_distribution.png
-│   ├── feature_correlation.png
-│   └── feature_importance.png
+│   ├── y_distribution.png
+│   ├── corr_matrix.png
+│   ├── catboost_feature.png
+│   ├── lightGBM_feature.png
+│   ├── number_review.png
+│   └── review_scores_rating.png
 ├── README.md
 └── requirements.txt
 ```
