@@ -129,7 +129,7 @@
 │   ├── number_review.png
 │   └── review_scores_rating.png
 ├── README.md
-└── licence.txt
+└── license.txt
 ```
 
 ---
