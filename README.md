@@ -24,7 +24,10 @@
 ![相関ヒートマップ](images/corr_matrix.png)
 
 ### LightGBMモデルが重視する特徴量の可視化
-##![LightGBMの特徴量](images/.png)
+##![LightGBMの特徴量](images/lightGBM_features.png)
+
+### CatBoostモデルが重視する特徴量の可視化
+##![LightGBMの特徴量](images/catboost_features.png)
 
 
 ---
