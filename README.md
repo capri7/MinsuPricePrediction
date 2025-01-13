@@ -89,9 +89,10 @@
 
 **数値変数と目的変数の散布図**：
 
-- 数値変数と目的変数の散布図
+- number_reviewとyの散布図
 ![number_reviewとyの散布図](images/number_review.png)
 
+- review_scores_ratingとyの散布図
 ![review_scores_ratingとyの散布図](images/review_scores_rating.png)
 
 ---
@@ -128,7 +129,7 @@
 │   ├── number_review.png
 │   └── review_scores_rating.png
 ├── README.md
-└── requirements.txt
+└── licence.txt
 ```
 
 ---
