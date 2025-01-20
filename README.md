@@ -122,30 +122,38 @@
 
 ---
 
-## 📈 探索的データ分析 (EDA)
-- **目的変数(y)の分布**
-  - 右に長いテールを持つため、対数変換を試行
 
-宿泊価格は右に裾が長い分布を示しており、一部の高価格帯の物件が存在しています。
+## 📈 探索的データ分析 (EDA)
+
+### **目的変数 (`y`) の分布**
+- 宿泊価格は右に長い裾を持つ分布を示しており、一部の高価格帯の物件が存在します。
+- 正規分布に近づけるため、**対数変換**を試行しました。
 
 ![目的変数の分布](images/y_distribution.png)
 
-- **数値変数とyの相関**
-  - `accommodates`, `bathrooms`, `bedrooms`, `beds` との間に0.45~0.5の相関
-  - その他の特徴量では非線形の関係
+---
 
-相関マトリックスにより、宿泊可能人数やベッド数などの変数が価格に影響を与える可能性が示唆されます。
+### **数値変数と `y` の相関**
+- **中程度の正の相関**を持つ特徴量:
+  - `accommodates`, `bathrooms`, `bedrooms`, `beds`（相関係数: 0.45～0.5）
+- その他の特徴量では**非線形の関係**が見られる場合があります。
+
+相関マトリックスでは、宿泊可能人数やベッド数などの特徴量が価格に影響を与える可能性が示唆されます。
 
 ![相関ヒートマップ](images/corr_matrix.png)
 
+---
 
-- **数値変数と目的変数の散布図**：
+### **数値変数と目的変数の散布図**
+1. **`number_of_reviews` と `y` の散布図**
+   - 多くのレビュー数を持つ物件ほど価格は低い傾向がありますが、一部の高価格帯の例外も確認されます。
 
-   - number_reviewとyの散布図
-![number_reviewとyの散布図](images/number_review.png)
+   ![number_reviewとyの散布図](images/number_review.png)
 
-   - review_scores_ratingとyの散布図
-![review_scores_ratingとyの散布図](images/review_scores_rating.png)
+2. **`review_scores_rating` と `y` の散布図**
+   - 高評価のレビューを持つ物件ほど価格が上昇する傾向が見られます。
+   
+   ![review_scores_ratingとyの散布図](images/review_scores_rating.png)
 
 ---
 
